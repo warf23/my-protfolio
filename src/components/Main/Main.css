@@ -1,0 +1,14 @@
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.intro-text {
+    background: var(--glassmorphism-bg);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+}

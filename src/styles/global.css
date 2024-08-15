@@ -1,0 +1,36 @@
+:root {
+    --bg-color: #F0E7DB;
+    --text-color: #1A202C;
+    --glassmorphism-bg: rgba(255, 255, 255, 0.25);
+    --header-bg: #F0E7DB;
+    --header-text: #1A202C;
+    --button-bg: #E2E8F0;
+    --button-text: #4A5568;
+    --theme-toggle-bg: #7C3AED;
+    --theme-toggle-text: #FFFF;
+    --dropdown-bg: #FFFF;
+    --dropdown-text: #1A202C;
+    --dropdown-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    --bg-color: #1A202C;
+    --text-color: #F0E7DB;
+    --glassmorphism-bg: rgba(0, 0, 0, 0.25);
+    --header-bg: #1A202C;
+    --header-text: #F0E7DB;
+    --button-bg: #4A5568;
+    --button-text: #E2E8F0;
+    --dropdown-bg: #2D3748;
+    --dropdown-text: #F0E7DB;
+}
