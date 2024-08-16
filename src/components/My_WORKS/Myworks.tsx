@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './MyWorks.css';
 import AutmobilIcon from "../../assets/Auto.png";
 import FinanceIcon from "../../assets/Mortgage.png";
@@ -8,25 +9,38 @@ interface Project {
   title: string;
   image: string;
   category: string;
+  link: string;
 }
 
 const projects: Project[] = [
-  { id: 1, title: "Development of a Classification Model for Temporary Signal Obstacle", image: AutmobilIcon, category: "automobile" },
-  { id: 2, title: "Mortgage Prepayment Risk Analysis", image: FinanceIcon, category: "finance" },
+  { 
+    id: 1, 
+    title: "Development of a Classification Model for Temporary Signal Obstacle", 
+    image: AutmobilIcon, 
+    category: "automobile",
+    link: "/projects/automobile"
+  },
+  { 
+    id: 2, 
+    title: "Mortgage Prepayment Risk Analysis", 
+    image: FinanceIcon, 
+    category: "finance",
+    link: "/projects/finance"
+  },
   // Add more projects as needed
 ];
 
 const MyWorks: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
-  const categories = ["all", "automobile", "finance"]; // Add more categories as needed
+  const categories = ["all", "automobile", "finance", "Generative Ai"];
 
   const filteredProjects = selectedCategory === "all" 
     ? projects 
     : projects.filter(project => project.category === selectedCategory);
 
   return (
-    <div className="my-works">
+    <div className="my-works" id="my-works">
       <h1>My WORKS</h1>
       <div className="category-filters">
         {categories.map(category => (
@@ -41,10 +55,10 @@ const MyWorks: React.FC = () => {
       </div>
       <div className="project-grid">
         {filteredProjects.map(project => (
-          <div key={project.id} className="project-card">
+          <Link key={project.id} to={project.link} className="project-card">
             <img src={project.image} alt={project.title} />
             <h3>{project.title}</h3>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

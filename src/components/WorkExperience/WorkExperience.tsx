@@ -1,6 +1,9 @@
 import React from 'react';
 import './WorkExperience.css';
 import CapgeminiICON from '../../assets/capgemini.png';
+import TechnocolabsICON from '../../assets/Technocolabs.png';
+import Mirrati from '../../assets/miratti 1.png';
+
 
 interface WorkExperienceItem {
   company: string;
@@ -23,20 +26,20 @@ const workExperienceData: WorkExperienceItem[] = [
     projectLink: "#capgemini-project" // Use a hash to link to a section on the same page
   },
   {
-    company: "Capgemini Engineering",
-    position: "Data & ML Engineer Intern",
-    startDate: "Mar 2024",
-    endDate: "Aug 2024",
-    description: "Development of a Classification Model for Temporary Signal Obstacles",
-    icon: CapgeminiICON,
+    company: "Technocolabs Software",
+    position: "Data Scientist Intern",
+    startDate: "Jul 2023",
+    endDate: "Sep 2023",
+    description: "Mortgage Prepayment Risk Analysis",
+    icon: TechnocolabsICON,
     projectLink: "#capgemini-project" // Use a hash to link to a section on the same page
   },
   {
     company: "Capgemini Engineering",
-    position: "Data & ML Engineer Intern",
-    startDate: "Mar 2024",
-    endDate: "Aug 2024",
-    description: "Development of a Classification Model for Temporary Signal Obstacles",
+    position: "Front-End Developer Intern ",
+    startDate: "Aug 2022",
+    endDate: "Sep 2022",
+    description: "create a robust communication and networking platform for a business community",
     icon: CapgeminiICON,
     projectLink: "#capgemini-project" // Use a hash to link to a section on the same page
   },

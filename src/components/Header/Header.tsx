@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '../../hooks/useTheme';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -29,11 +30,9 @@ const Header: React.FC = () => {
           <div className="dropdown-menu">
             <ul className="nav-links">
               <li><a href="#about">About</a></li>
-              <li><a href="#works">Works</a></li>
+              <li><Link to="/#my-works">My Works</Link></li>
               <li><a href="#wallpapers">Wallpapers</a></li>
-              <li><a href="#posts">Posts</a></li>
-              <li><a href="#uses">Uses</a></li>
-              <li><a href="#view-source">View Source</a></li>
+           
             </ul>
           </div>
         )}
