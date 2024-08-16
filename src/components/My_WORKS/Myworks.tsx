@@ -10,14 +10,13 @@ interface Project {
   category: string;
 }
 
-const initialProjects: Project[] = [
+const projects: Project[] = [
   { id: 1, title: "Development of a Classification Model for Temporary Signal Obstacle", image: AutmobilIcon, category: "automobile" },
   { id: 2, title: "Mortgage Prepayment Risk Analysis", image: FinanceIcon, category: "finance" },
-  // Add more initial projects as needed
+  // Add more projects as needed
 ];
 
 const MyWorks: React.FC = () => {
-  const [projects, setProjects] = useState<Project[]>(initialProjects);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   const categories = ["all", "automobile", "finance"]; // Add more categories as needed
@@ -25,10 +24,6 @@ const MyWorks: React.FC = () => {
   const filteredProjects = selectedCategory === "all" 
     ? projects 
     : projects.filter(project => project.category === selectedCategory);
-
-  const addProject = (newProject: Project) => {
-    setProjects([...projects, newProject]);
-  };
 
   return (
     <div className="my-works">
@@ -52,7 +47,6 @@ const MyWorks: React.FC = () => {
           </div>
         ))}
       </div>
-      {/* You can add a form here to add new projects */}
     </div>
   );
 };
