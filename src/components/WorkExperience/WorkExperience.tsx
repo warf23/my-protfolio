@@ -40,7 +40,7 @@ const workExperienceData: WorkExperienceItem[] = [
     startDate: "Aug 2022",
     endDate: "Sep 2022",
     description: "create a robust communication and networking platform for a business community",
-    icon: CapgeminiICON,
+    icon: Mirrati,
     projectLink: "#capgemini-project" // Use a hash to link to a section on the same page
   },
   
