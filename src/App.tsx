@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
+import MyWorks from './components/My_WORKS/Myworks';
 import { ThemeProvider } from './hooks/useTheme';
 import './styles/global.css';
 
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <div className="App">
         <Header />
         <Main />
+        <MyWorks />
       </div>
     </ThemeProvider>
   );
