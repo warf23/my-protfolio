@@ -14,8 +14,10 @@ const Header: React.FC = () => {
   return (
     <header className={`${isDarkMode ? 'dark-mode' : ''}`}>
       <div className="logo">
+        
         <span className="paw-icon">🐾</span>
-        <h1>AGRAT MOHAMMED</h1>
+        <h1><Link to="/">AGRAT MOHAMMED</Link></h1>
+        
       </div>
       <nav>
         <button className="theme-toggle" onClick={toggleTheme}>
@@ -30,7 +32,7 @@ const Header: React.FC = () => {
           <div className="dropdown-menu">
             <ul className="nav-links">
               <li><a href="#about">About</a></li>
-              <li><Link to="/#my-works">My Works</Link></li>
+              <li><Link to="/">My Works</Link></li>
               <li><a href="#wallpapers">Wallpapers</a></li>
            
             </ul>

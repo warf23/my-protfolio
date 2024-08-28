@@ -6,7 +6,7 @@ import Solution from "../../assets/Signal_Project/sOLUTION.png";
 import OBSTACLES from "../../assets/Signal_Project/OBSTACLES.png";
 import EnsembleLearning from "../../assets/Signal_Project/ensembles_learning.png";
 
-import './d.css';
+import './Automibile.css';
 
 interface ProjectDetails {
   technologies: string[];
@@ -16,7 +16,7 @@ interface ProjectDetails {
 
 const AutomobileProject: React.FC = () => {
   const projectDetails: ProjectDetails = {
-    technologies: ['Python', 'Python', 'Python', 'Python', 'Python', 'Python', 'Python', 'Python'],
+    technologies: ['Python', 'time series ', 'data visualization ', 'Signal Processing ', 'Predictive Modeling', 'Python', 'Python', 'Python'],
     duration: '6 month',
     roles: [
       'Implemented data preprocessing techniques to clean and transform raw data, ensuring data quality for analysis and predictive modeling',
@@ -32,8 +32,8 @@ const AutomobileProject: React.FC = () => {
     <div className="project">
       <h1>Development of a Classification Model for Temporary Signal Obstacle</h1>
       
-      <div className="main-content">
         <img src={AutmobilIcon} alt="Automobile Project" className="main-image" />
+      <div className="main-content">
         <p className="description">
           Imagine you are driving in a remote area or urban environment where GPS data is inaccurate or unavailable. This poses significant risks to both human safety and vehicle integrity. In such scenarios, drivers need an alternative system to identify and classify obstacles on the road. The challenge is to create a model that can <span className="highlight">classify road obstacles based on temporary signals</span>, ensuring <span className="highlight">safe navigation</span> without relying on GPS.
         </p>
@@ -78,7 +78,6 @@ const AutomobileProject: React.FC = () => {
       </div>
 
       <div className="video-section">
-        <h2>VIDEO</h2>
         <div className="video-container">
           <AdvancedVideo cldVid={videoSource} controls />
         </div>
