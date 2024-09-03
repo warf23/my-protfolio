@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import FinanceIcon from "../../assets/Mortgage.png";
 
 
@@ -15,13 +15,20 @@ interface ProjectDetails {
 const FinanceProject: React.FC = () => { 
 
   const projectDetails: ProjectDetails = {
-    technologies: ['Python', 'time series ', 'data visualization ', 'Signal Processing ', 'Predictive Modeling', 'Python', 'Python', 'Python'],
-    duration: '6 month',
+    technologies: [
+      "XGBoost",
+      "Python",
+      "Docker",
+      "Amazon AWS EC2",
+      "Git/GitHub",
+      "Scikit-learn",
+      "Pipelines"
+  ],
+    duration: '3 month',
     roles: [
-      'Implemented data preprocessing techniques to clean and transform raw data, ensuring data quality for analysis and predictive modeling',
-      'Developed and implemented predictive models using advanced classification algorithms to accurately classify obstacles on road surfaces, resulting in improved obstacle detection and enhanced traffic safety.',
-      'Optimized predictive models and conducted comprehensive evaluations using various performance metrics, enhancing model accuracy and robustness in diverse road conditions.',
-      'Deployed models in Glyphwork NCode software, streamlining model integration and operations while documenting essential code and workflows. Partnered with the Signal Processing team to align models with project goals, increasing project efficiency by 20%.'
+      "Developed a predictive model using XGBoost classifier to analyze the risk of early repayment of mortgage loans, achieving an accuracy rate of 87%.",
+      "Developed and deployed a user-centric risk assessment web application on AWS EC2, using Docker for containerization, thereby improving scalability and reliability.",
+      "Engaged in international collaboration, enhancing cultural understanding and teamwork to ensure project success."
     ]
   };
 
@@ -29,7 +36,7 @@ const FinanceProject: React.FC = () => {
 
   return (
     <div className="project">
-    <h1>Development of a Classification Model for Temporary Signal Obstacle</h1>
+    <h1> Analyze the risk of early repayment of mortgage loans</h1>
     
       <img src={FinanceIcon} alt="Automobile Project" className="main-image" />
     <div className="main-content">
@@ -39,7 +46,7 @@ const FinanceProject: React.FC = () => {
     <div className="button-container">
   <button 
     className="github-button"
-    onClick={() => window.open('https://github.com/yourusername/your-repo', '_blank')}
+    onClick={() => window.open('https://github.com/warf23/Mortgage-Prepayment-Risk-Analysis-Prediction', '_blank')}
   >
     For more detail, check my repo in GitHub
   </button>

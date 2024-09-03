@@ -12,7 +12,10 @@
     --dropdown-text: #1A202C;
     --dropdown-shadow: rgba(0, 0, 0, 0.1);
 }
-
+a{
+    text-decoration: none; 
+    color: var(--text-color);
+}
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--bg-color);

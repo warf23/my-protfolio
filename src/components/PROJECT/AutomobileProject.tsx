@@ -16,7 +16,20 @@ interface ProjectDetails {
 
 const AutomobileProject: React.FC = () => {
   const projectDetails: ProjectDetails = {
-    technologies: ['Python', 'time series ', 'data visualization ', 'Signal Processing ', 'Predictive Modeling', 'Python', 'Python', 'Python'],
+    technologies: [
+      "Signal Processing (Glyphwork)",
+      "Python",
+      "Time Series Analysis",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-Learn",
+      "TensorFlow",
+      "SQL",
+      "Jupyter Notebook",
+      "Git"
+    ],
     duration: '6 month',
     roles: [
       'Implemented data preprocessing techniques to clean and transform raw data, ensuring data quality for analysis and predictive modeling',
